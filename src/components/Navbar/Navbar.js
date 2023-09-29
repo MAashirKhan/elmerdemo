@@ -32,22 +32,22 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="#herosection">
+              <Link className="nav-link" to="#uikits">
                 UI Kit
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="#appsection">
                 Apps
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="#pages">
                 Pages
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="#ecommerce">
                 E-Commerce
               </Link>
             </li>

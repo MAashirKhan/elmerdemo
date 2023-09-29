@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "../Cards/Card";
-import { demosData } from "../../data";
+import { pagesData } from "../../data";
 
-function Demo() {
+function ExtraPages() {
   return (
     <section
-      id="demo"
+      id="pages"
       style={{
         background: "#F1F6FA",
         height: "auto",
@@ -24,36 +24,22 @@ function Demo() {
             textTransform: "uppercase",
           }}
         >
-          Pre-Built Dashboard
+          EXTRA PAGES
         </p>
-        <h1 className="py-2 fw-normal">
-          Super Charged Pack of
-          <br /> Full Customizable & Easy to Use Demos.
-        </h1>
+        <h1 className="py-2 fw-normal">Authentication & Error pages</h1>
       </div>
       {/*End of Heading and Title*/}
-      {/*Demo Section*/}
-      <div class="container">
+      {/*Pages Section*/}
+      <div class="container mt-5">
         <div class="row mx-auto">
-          {demosData.map((card, index) => {
+          {pagesData.map((card, index) => {
             return <Card key={index} {...card} />;
           })}
         </div>
       </div>
-      <button
-        className="btn btn-md btn-outline-primary py-2 mt-5"
-        style={{
-          color: "#667add",
-          borderRadius: 50,
-          borderColor: "#667add",
-        }}
-      >
-        More Coming Soon
-      </button>
-
-      {/*End Demo Section*/}
+      {/*End Pages Section*/}
     </section>
   );
 }
 
-export default Demo;
+export default ExtraPages;

@@ -1,21 +1,24 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/Hero/HeroSection";
 import Demo from "./components/Demos/demo";
+import UIKits from "./components/UIKits/uikits";
+import AppSection from "./components/AppsSection/AppSection";
+import ExtraPages from "./components/ExtraPages/ExtraPages";
+import Ecommerce from "./components/Ecommerce/Ecommerce";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
-        <Link to={"#herosection"}>
-          <HeroSection />
-        </Link>
-        <Link to={"#demo"}>
-          <Demo />
-        </Link>
+        <HeroSection />
+        <Demo />
+        <UIKits />
+        <AppSection />
+        <ExtraPages />
+        <Ecommerce />
       </div>
     </Router>
   );

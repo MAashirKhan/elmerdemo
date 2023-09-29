@@ -1,13 +1,13 @@
 import React from "react";
 import Card from "../Cards/Card";
-import { demosData } from "../../data";
+import { appsData } from "../../data";
 
-function Demo() {
+function AppSection() {
   return (
     <section
-      id="demo"
+      id="appsection"
       style={{
-        background: "#F1F6FA",
+        background: "#EDF0F5",
         height: "auto",
         width: "100%",
         paddingTop: "140px",
@@ -24,36 +24,26 @@ function Demo() {
             textTransform: "uppercase",
           }}
         >
-          Pre-Built Dashboard
+          WORKING APPS & SOCIAL FEEDS
         </p>
         <h1 className="py-2 fw-normal">
-          Super Charged Pack of
-          <br /> Full Customizable & Easy to Use Demos.
+          A collection of working apps
+          <br /> & live social media feeds.
         </h1>
       </div>
       {/*End of Heading and Title*/}
-      {/*Demo Section*/}
-      <div class="container">
+      {/*Apps Section*/}
+      <div class="container mt-5">
         <div class="row mx-auto">
-          {demosData.map((card, index) => {
+          {appsData.map((card, index) => {
             return <Card key={index} {...card} />;
           })}
         </div>
       </div>
-      <button
-        className="btn btn-md btn-outline-primary py-2 mt-5"
-        style={{
-          color: "#667add",
-          borderRadius: 50,
-          borderColor: "#667add",
-        }}
-      >
-        More Coming Soon
-      </button>
 
-      {/*End Demo Section*/}
+      {/*End Apps Section*/}
     </section>
   );
 }
 
-export default Demo;
+export default AppSection;
