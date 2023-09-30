@@ -34,8 +34,8 @@ function Ecommerce() {
       </div>
       {/*End of Heading and Title*/}
       {/*Ecommerce Section*/}
-      <div class="container mt-5">
-        <div class="row mx-auto">
+      <div className="container mt-5">
+        <div className="row mx-auto">
           {ecommerceData.map((card, index) => {
             return <Card key={index} {...card} />;
           })}

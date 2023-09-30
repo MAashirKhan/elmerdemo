@@ -30,8 +30,8 @@ function ExtraPages() {
       </div>
       {/*End of Heading and Title*/}
       {/*Pages Section*/}
-      <div class="container mt-5">
-        <div class="row mx-auto">
+      <div className="container mt-5">
+        <div className="row mx-auto">
           {pagesData.map((card, index) => {
             return <Card key={index} {...card} />;
           })}

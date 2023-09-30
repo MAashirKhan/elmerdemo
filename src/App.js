@@ -8,6 +8,8 @@ import AppSection from "./components/AppsSection/AppSection";
 import ExtraPages from "./components/ExtraPages/ExtraPages";
 import Ecommerce from "./components/Ecommerce/Ecommerce";
 import Features from "./components/Features/Features";
+import PriceTag from "./components/PriceTag/Pricetag";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <ExtraPages />
         <Ecommerce />
         <Features />
+        <PriceTag />
+        <Footer />
       </div>
     </Router>
   );

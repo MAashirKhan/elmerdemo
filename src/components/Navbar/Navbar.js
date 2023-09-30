@@ -57,7 +57,10 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link
+                className="nav-link"
+                to="https://hencework.com/theme/elmer/full-width-light/documentation.html"
+              >
                 Documentation
               </Link>
             </li>

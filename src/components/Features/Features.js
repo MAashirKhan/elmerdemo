@@ -1,5 +1,5 @@
 import React from "react";
-import { demosData } from "../../data";
+import { featuresData } from "../../data";
 import FeatureUI from "../FeatureUI/FeatureUI";
 
 function Features() {
@@ -32,9 +32,9 @@ function Features() {
       </div>
       {/*End of Heading and Title*/}
       {/*Demo Section*/}
-      <div class="container">
-        <div class="row mx-auto">
-          {demosData.map((card, index) => {
+      <div className="container mt-5">
+        <div className="row mx-auto">
+          {featuresData.map((card, index) => {
             return <FeatureUI key={index} {...card} />;
           })}
         </div>

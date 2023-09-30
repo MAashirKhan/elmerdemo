@@ -33,8 +33,8 @@ function Demo() {
       </div>
       {/*End of Heading and Title*/}
       {/*Demo Section*/}
-      <div class="container">
-        <div class="row mx-auto">
+      <div className="container">
+        <div className="row mx-auto">
           {demosData.map((card, index) => {
             return <Card key={index} {...card} />;
           })}
