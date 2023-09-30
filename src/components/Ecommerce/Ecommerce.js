@@ -13,7 +13,8 @@ function Ecommerce() {
         backgroundPosition: "center center",
         height: "auto",
         width: "100%",
-        paddingTop: "140px",
+        paddingTop: "100px",
+        paddingBottom: "100px",
       }}
     >
       {/*Heading and Title*/}

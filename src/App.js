@@ -7,6 +7,7 @@ import UIKits from "./components/UIKits/uikits";
 import AppSection from "./components/AppsSection/AppSection";
 import ExtraPages from "./components/ExtraPages/ExtraPages";
 import Ecommerce from "./components/Ecommerce/Ecommerce";
+import Features from "./components/Features/Features";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <AppSection />
         <ExtraPages />
         <Ecommerce />
+        <Features />
       </div>
     </Router>
   );
