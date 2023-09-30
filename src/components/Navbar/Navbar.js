@@ -4,11 +4,13 @@ import { HashLink as Link } from "react-router-hash-link";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-fixed navbar-expand-lg py-4">
+    <nav className="navbar fixed-top bg-white navbar-expand-lg py-4">
       <div className="container px-4">
-        <Link className="navbar-brand" to="/">
+        {/* Logo */}
+        <Link className="navbar-brand" to="#herosection">
           <img className="img-fluid" src={Logo} alt="Logo" /> {` Elmer`}
         </Link>
+        {/* Toggle Button */}
         <button
           className="navbar-toggler"
           type="button"
@@ -20,12 +22,14 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        {/*Main Menu*/}
-        <div
-          className="collapse navbar-collapse d-flex justify-content-end"
-          id="navbarNav"
-        >
-          <ul className="navbar-nav align-item-center text-dark fw-300">
+        {/* Main Menu */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul
+            className="navbar-nav ms-auto"
+            style={{
+              textAlign: "left",
+            }}
+          >
             <li className="nav-item">
               <Link className="nav-link" to="#demo">
                 Demo
@@ -57,27 +61,32 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="https://hencework.com/theme/elmer/full-width-light/documentation.html"
+              <a
+                className={"nav-link"}
+                href={
+                  "https://hencework.com/theme/elmer/full-width-light/documentation.html"
+                }
+                target={"_blank"}
+                rel={"noreferrer"}
               >
                 Documentation
-              </Link>
+              </a>
             </li>
+            {/* Button */}
+            <button
+              className="btn p-auto mx-2"
+              style={{
+                width: 150,
+                backgroundColor: "#7688e2",
+                borderRadius: "50px",
+                color: "white",
+              }}
+            >
+              Buy Elmer $30
+            </button>
           </ul>
         </div>
-        <button
-          className="btn mx-4 p-auto"
-          style={{
-            width: 150,
-            backgroundColor: "#7688e2",
-            borderRadius: "50px",
-            color: "white",
-          }}
-        >
-          Buy Elmer 30$
-        </button>
-        {/*End of Main Menu*/}
+        {/* End of Main Menu */}
       </div>
     </nav>
   );

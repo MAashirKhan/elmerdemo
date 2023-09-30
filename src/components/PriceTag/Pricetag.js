@@ -39,7 +39,7 @@ function PriceTag() {
         </h1>
       </div>
       <button
-        className="btn btn-md btn-outline-primary py-2 mt-2"
+        className="btn btn-md btn-outline-primary py-2 px-4 mt-2"
         style={{
           color: "#667add",
           borderRadius: 50,

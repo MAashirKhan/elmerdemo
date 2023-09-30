@@ -31,7 +31,7 @@ function Features() {
         </h1>
       </div>
       {/*End of Heading and Title*/}
-      {/*Demo Section*/}
+      {/*Features Section*/}
       <div className="container mt-5">
         <div className="row mx-auto">
           {featuresData.map((card, index) => {
@@ -39,7 +39,7 @@ function Features() {
           })}
         </div>
       </div>
-      {/*End Demo Section*/}
+      {/*End Features Section*/}
     </section>
   );
 }
